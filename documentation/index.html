@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="assets/vendor/charts/c3charts/c3.css">
     <link rel="stylesheet" href="assets/vendor/fonts/flag-icon-css/flag-icon.min.css">
-    <title>Concept - Bootstrap 4 Admin Dashboard Template</title>
+    <title>Reusee</title>
 </head>
 
 <body>
@@ -28,11 +28,8 @@
         <!-- ============================================================== -->
         <div class="dashboard-header">
             <nav class="navbar navbar-expand-lg bg-white fixed-top">
-                <a class="navbar-brand" href="index.html"><img class="logo-img" src="assets/images/logo.png" alt="logo" style="max-width:100%"></a>
+                <a class="navbar-brand" href="index.html">APP</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-=======
-                    <img class="navbar-brand" href="index.html" src="assets/images/hackathon.png"></div>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
@@ -168,9 +165,6 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="notice.html"><i class="fa fa-fw fa-file-pdf"></i>Notices</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="notice.html"><i class="fa fa-fw fa-industry"></i>FabLab</a>
-                                </li>
                             </ul>
                         </ul>
                     </div>
@@ -189,113 +183,43 @@
                     <!-- ============================================================== -->
                     <!-- pageheader  -->
                     <!-- ============================================================== -->
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="page-header">
+                            </div>
+                        </div>
+                    </div>
 
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active"></div>
+                                <div id="target" class="carousel-item"></div>
+                                <div class="carousel-item"></div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+                        <script>$('.carousel').carousel();
+                            </script>
+                          
                     <!-- ============================================================== -->
                     <!-- end pageheader  -->
                     <!-- ============================================================== -->
-                    <div class="file-upload">
-                        <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Ajouter une image</button>
-                        <div class="image-upload-wrap">
-                          <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
-                          <div class="drag-text">
-                            <h3>Deposer votre image</h3>
-                          </div>
-                        </div>
-                        <div class="file-upload-content">
-                          <img class="file-upload-image" src="#" alt="your image" />
-                          <div class="image-title-wrap">
-                            <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="file-upload">
-                            <form class="form-horizontal" action="/action_page.php">
-                                <div class="form-group">
-                                  <label class="control-label" for="Titre">Le titre de votre article</label>
-                                    <input type="text" class="form-control form-control-lg" id="Titre" placeholder="Exemple">
-                                </div>
-                                <hr>
-                                <div class="form-group">
-                                  <label class="control-label" for="pwd">Description de votre article</label>
-                                    <textarea type="text" class="form-control form-control-lg" id="Description" placeholder="Description de oakdo"></textarea>
-                                </div>
-                              </form>
-                    </div>
-
-                    <div class="file-upload">
-                            <form class="form-horizontal" action="/action_page.php">
-                                <label class="control-label" for="categorie">Catégorie</label>
-                                <select class="form-control form-control-lg" id="categorie">
-                                        <option>Aspirateur</option>
-                                        <option>Lave linge</option>
-                                        <option>Referegerateur</option>
-                                        <option>Lave vaiselle</option>
-                                        <option>Cafétiére</option>
-                                        <option>Robot de cuisine</option>
-                                        <option>Divers Electromenagé</option>
-                                        <option>Micro-onde</option>
-                                        <option>Friteuse</option>
-                                </select>
-                                <hr>
-                                <label class="control-label" for="marque">Marque</label>
-                                <select class="form-control form-control-lg" id="marque">
-                                        <option>Aspirateur</option>
-                                        <option>Lave linge</option>
-                                        <option>Referegerateur</option>
-                                        <option>Lave vaiselle</option>
-                                        <option>Cafétiére</option>
-                                        <option>Robot de cuisine</option>
-                                        <option>Divers Electromenagé</option>
-                                        <option>Micro-onde</option>
-                                        <option>Friteuse</option>
-                                </select>
-                              </form>
-                    </div>
-
-                    <div class="file-upload">
-                            <form class="form-horizontal" action="/action_page.php">
-                                <label class="control-label" for="Prix">Prix</label>
-                                  <input type="text" class="form-control form-control-lg" id="Prix" placeholder="€">
-                              </form>
-                    </div>
-                    <button type="button" class="btn btn-primary">Ajouter mon article</button>
-
-                      <script>
-                          function readURL(input) {
-                    if (input.files && input.files[0]) {
-
-                        var reader = new FileReader();
-
-                        reader.onload = function(e) {
-                        $('.image-upload-wrap').hide();
-
-                        $('.file-upload-image').attr('src', e.target.result);
-                        $('.file-upload-content').show();
-
-                        $('.image-title').html(input.files[0].name);
-                        };
-
-                        reader.readAsDataURL(input.files[0]);
-
-                    } else {
-                        removeUpload();
-                    }
-                    }
-
-                    function removeUpload() {
-                    $('.file-upload-input').replaceWith($('.file-upload-input').clone());
-                    $('.file-upload-content').hide();
-                    $('.image-upload-wrap').show();
-                    }
-                    $('.image-upload-wrap').bind('dragover', function () {
-                            $('.image-upload-wrap').addClass('image-dropping');
-                        });
-                        $('.image-upload-wrap').bind('dragleave', function () {
-                            $('.image-upload-wrap').removeClass('image-dropping');
-});
-
-                      </script>
+                       <!-- <img class="slider" src="assets/images/Visuacueil1.png">
+                       <img class="slider" src="assets/images/Visuacceuil2.png"> -->
+            <!-- ============================================================== -->
             <!-- end footer -->
             <!-- ============================================================== -->
         </div>
