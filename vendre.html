@@ -28,7 +28,7 @@
         <!-- ============================================================== -->
         <div class="dashboard-header">
             <nav class="navbar navbar-expand-lg bg-white fixed-top">
-                <a class="navbar-brand" href="index.html">APPLICATION</a>
+                <a class="navbar-brand" href="index.html"><img class="logo-img" src="assets/images/logo.png" alt="logo" style="max-width:15%"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -154,16 +154,19 @@
                             </li>
                             <ul class="nav flex-column">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="acheter.html">Acheter</a>
+                                    <a class="nav-link" href="acheter.html"><i class="fa fa-fw fa-shopping-cart"></i>Acheter</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Vendre</a>
+                                    <a class="nav-link" href="vendre.html"><i class="fa fa-fw fa-box"></i>Vendre</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Tuto</a>
+                                    <a class="nav-link" href="#"><i class="fa fa-fw fa-video"></i>Tuto</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Notices</a>
+                                    <a class="nav-link" href="notice.html"><i class="fa fa-fw fa-file-pdf"></i>Notices</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="notice.html"><i class="fa fa-fw fa-industry"></i>FabLab</a>
                                 </li>
                             </ul>
                         </ul>
@@ -183,22 +186,16 @@
                     <!-- ============================================================== -->
                     <!-- pageheader  -->
                     <!-- ============================================================== -->
-                    <div class="row">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                            <div class="page-header">
-                                <h2 class="pageheader-title">Vendre ton article</h2>
-                            </div>
-                        </div>
-                    </div>
+
                     <!-- ============================================================== -->
                     <!-- end pageheader  -->
                     <!-- ============================================================== -->
                     <div class="file-upload">
-                        <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
+                        <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Ajouter une image</button>
                         <div class="image-upload-wrap">
                           <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
                           <div class="drag-text">
-                            <h3>Drag and drop a file or select add Image</h3>
+                            <h3>Deposer votre image</h3>
                           </div>
                         </div>
                         <div class="file-upload-content">
